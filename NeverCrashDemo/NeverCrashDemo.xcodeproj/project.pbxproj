@@ -15,6 +15,9 @@
 		A81DA7041E8A051F00B81195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81DA7021E8A051F00B81195 /* LaunchScreen.storyboard */; };
 		A81DA70F1E8A051F00B81195 /* NeverCrashDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81DA70E1E8A051F00B81195 /* NeverCrashDemoTests.m */; };
 		A81DA71A1E8A051F00B81195 /* NeverCrashDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81DA7191E8A051F00B81195 /* NeverCrashDemoUITests.m */; };
+		A8DF91A21E8A803D0065076C /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF919D1E8A803D0065076C /* NSObject+Swizzling.m */; };
+		A8DF91A31E8A803D0065076C /* NeverCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF919F1E8A803D0065076C /* NeverCrashManager.m */; };
+		A8DF91A41E8A803D0065076C /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91A11E8A803D0065076C /* NSObject+KVOCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		A81DA7151E8A051F00B81195 /* NeverCrashDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeverCrashDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81DA7191E8A051F00B81195 /* NeverCrashDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeverCrashDemoUITests.m; sourceTree = "<group>"; };
 		A81DA71B1E8A051F00B81195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DF919C1E8A803D0065076C /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		A8DF919D1E8A803D0065076C /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		A8DF919E1E8A803D0065076C /* NeverCrashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeverCrashManager.h; sourceTree = "<group>"; };
+		A8DF919F1E8A803D0065076C /* NeverCrashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeverCrashManager.m; sourceTree = "<group>"; };
+		A8DF91A01E8A803D0065076C /* NSObject+KVOCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrash.h"; sourceTree = "<group>"; };
+		A8DF91A11E8A803D0065076C /* NSObject+KVOCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +153,12 @@
 		A81DA7271E8A055900B81195 /* codes */ = {
 			isa = PBXGroup;
 			children = (
+				A8DF919C1E8A803D0065076C /* NSObject+Swizzling.h */,
+				A8DF919D1E8A803D0065076C /* NSObject+Swizzling.m */,
+				A8DF919E1E8A803D0065076C /* NeverCrashManager.h */,
+				A8DF919F1E8A803D0065076C /* NeverCrashManager.m */,
+				A8DF91A01E8A803D0065076C /* NSObject+KVOCrash.h */,
+				A8DF91A11E8A803D0065076C /* NSObject+KVOCrash.m */,
 			);
 			name = codes;
 			path = ../../codes;
@@ -282,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DF91A41E8A803D0065076C /* NSObject+KVOCrash.m in Sources */,
 				A81DA6FC1E8A051F00B81195 /* ViewController.m in Sources */,
 				A81DA6F91E8A051F00B81195 /* AppDelegate.m in Sources */,
+				A8DF91A31E8A803D0065076C /* NeverCrashManager.m in Sources */,
 				A81DA6F61E8A051F00B81195 /* main.m in Sources */,
+				A8DF91A21E8A803D0065076C /* NSObject+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +534,7 @@
 				A81DA7201E8A051F00B81195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A81DA7211E8A051F00B81195 /* Build configuration list for PBXNativeTarget "NeverCrashDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +543,7 @@
 				A81DA7231E8A051F00B81195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A81DA7241E8A051F00B81195 /* Build configuration list for PBXNativeTarget "NeverCrashDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +552,7 @@
 				A81DA7261E8A051F00B81195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
