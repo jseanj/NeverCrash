@@ -1,21 +1,15 @@
 #import "NeverCrashManager.h"
 #import "NSObject+KVOCrash.h"
+#import "NSObject+SelectorCrash.h"
 
 @implementation NeverCrashManager
-+ (instancetype)shared {
-    static NeverCrashManager *manager;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        manager = [[NeverCrashManager alloc] init];
-    });
-    return manager;
-}
-
-- (void)enable {
++ (void)enable {
     [NSObject nc_enableKVOGuard];
+    [NSObject nc_enableSelectorGuard];
 }
 
-- (void)disEnable {
++ (void)disEnable {
     [NSObject nc_disEnableKVOGuard];
+    [NSObject nc_disEnableSelectorGuard];
 }
 @end

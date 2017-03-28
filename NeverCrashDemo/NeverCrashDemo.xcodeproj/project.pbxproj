@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364C7D2A1E8AA12400E8B92B /* KVOCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364C7D291E8AA12400E8B92B /* KVOCrashViewController.m */; };
+		364C7D2D1E8AA14200E8B92B /* SelectorCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364C7D2C1E8AA14200E8B92B /* SelectorCrashViewController.m */; };
+		364C7D301E8AA15800E8B92B /* TimerCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364C7D2F1E8AA15800E8B92B /* TimerCrashViewController.m */; };
+		364C7D331E8AA16F00E8B92B /* ContainerCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364C7D321E8AA16F00E8B92B /* ContainerCrashViewController.m */; };
+		364C7D361E8AA19300E8B92B /* BadAccessCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364C7D351E8AA19300E8B92B /* BadAccessCrashViewController.m */; };
+		364C7D391E8AA1B400E8B92B /* UIThreadCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364C7D381E8AA1B400E8B92B /* UIThreadCrashViewController.m */; };
+		364C7D3C1E8AA3D800E8B92B /* NSObject+SelectorCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 364C7D3B1E8AA3D800E8B92B /* NSObject+SelectorCrash.m */; };
 		A81DA6F61E8A051F00B81195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81DA6F51E8A051F00B81195 /* main.m */; };
 		A81DA6F91E8A051F00B81195 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81DA6F81E8A051F00B81195 /* AppDelegate.m */; };
 		A81DA6FC1E8A051F00B81195 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81DA6FB1E8A051F00B81195 /* ViewController.m */; };
@@ -38,6 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		364C7D281E8AA12400E8B92B /* KVOCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOCrashViewController.h; sourceTree = "<group>"; };
+		364C7D291E8AA12400E8B92B /* KVOCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOCrashViewController.m; sourceTree = "<group>"; };
+		364C7D2B1E8AA14200E8B92B /* SelectorCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorCrashViewController.h; sourceTree = "<group>"; };
+		364C7D2C1E8AA14200E8B92B /* SelectorCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorCrashViewController.m; sourceTree = "<group>"; };
+		364C7D2E1E8AA15800E8B92B /* TimerCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerCrashViewController.h; sourceTree = "<group>"; };
+		364C7D2F1E8AA15800E8B92B /* TimerCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerCrashViewController.m; sourceTree = "<group>"; };
+		364C7D311E8AA16F00E8B92B /* ContainerCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerCrashViewController.h; sourceTree = "<group>"; };
+		364C7D321E8AA16F00E8B92B /* ContainerCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerCrashViewController.m; sourceTree = "<group>"; };
+		364C7D341E8AA19300E8B92B /* BadAccessCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadAccessCrashViewController.h; sourceTree = "<group>"; };
+		364C7D351E8AA19300E8B92B /* BadAccessCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadAccessCrashViewController.m; sourceTree = "<group>"; };
+		364C7D371E8AA1B400E8B92B /* UIThreadCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIThreadCrashViewController.h; sourceTree = "<group>"; };
+		364C7D381E8AA1B400E8B92B /* UIThreadCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIThreadCrashViewController.m; sourceTree = "<group>"; };
+		364C7D3A1E8AA3D800E8B92B /* NSObject+SelectorCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorCrash.h"; sourceTree = "<group>"; };
+		364C7D3B1E8AA3D800E8B92B /* NSObject+SelectorCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorCrash.m"; sourceTree = "<group>"; };
 		A81DA6F11E8A051F00B81195 /* NeverCrashDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeverCrashDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81DA6F51E8A051F00B81195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A81DA6F71E8A051F00B81195 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +136,18 @@
 				A81DA6F81E8A051F00B81195 /* AppDelegate.m */,
 				A81DA6FA1E8A051F00B81195 /* ViewController.h */,
 				A81DA6FB1E8A051F00B81195 /* ViewController.m */,
+				364C7D281E8AA12400E8B92B /* KVOCrashViewController.h */,
+				364C7D291E8AA12400E8B92B /* KVOCrashViewController.m */,
+				364C7D2B1E8AA14200E8B92B /* SelectorCrashViewController.h */,
+				364C7D2C1E8AA14200E8B92B /* SelectorCrashViewController.m */,
+				364C7D2E1E8AA15800E8B92B /* TimerCrashViewController.h */,
+				364C7D2F1E8AA15800E8B92B /* TimerCrashViewController.m */,
+				364C7D311E8AA16F00E8B92B /* ContainerCrashViewController.h */,
+				364C7D321E8AA16F00E8B92B /* ContainerCrashViewController.m */,
+				364C7D341E8AA19300E8B92B /* BadAccessCrashViewController.h */,
+				364C7D351E8AA19300E8B92B /* BadAccessCrashViewController.m */,
+				364C7D371E8AA1B400E8B92B /* UIThreadCrashViewController.h */,
+				364C7D381E8AA1B400E8B92B /* UIThreadCrashViewController.m */,
 				A81DA6FD1E8A051F00B81195 /* Main.storyboard */,
 				A81DA7001E8A051F00B81195 /* Assets.xcassets */,
 				A81DA7021E8A051F00B81195 /* LaunchScreen.storyboard */,
@@ -159,6 +192,8 @@
 				A8DF919F1E8A803D0065076C /* NeverCrashManager.m */,
 				A8DF91A01E8A803D0065076C /* NSObject+KVOCrash.h */,
 				A8DF91A11E8A803D0065076C /* NSObject+KVOCrash.m */,
+				364C7D3A1E8AA3D800E8B92B /* NSObject+SelectorCrash.h */,
+				364C7D3B1E8AA3D800E8B92B /* NSObject+SelectorCrash.m */,
 			);
 			name = codes;
 			path = ../../codes;
@@ -297,11 +332,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364C7D301E8AA15800E8B92B /* TimerCrashViewController.m in Sources */,
 				A8DF91A41E8A803D0065076C /* NSObject+KVOCrash.m in Sources */,
+				364C7D2D1E8AA14200E8B92B /* SelectorCrashViewController.m in Sources */,
 				A81DA6FC1E8A051F00B81195 /* ViewController.m in Sources */,
 				A81DA6F91E8A051F00B81195 /* AppDelegate.m in Sources */,
+				364C7D2A1E8AA12400E8B92B /* KVOCrashViewController.m in Sources */,
+				364C7D391E8AA1B400E8B92B /* UIThreadCrashViewController.m in Sources */,
+				364C7D331E8AA16F00E8B92B /* ContainerCrashViewController.m in Sources */,
+				364C7D3C1E8AA3D800E8B92B /* NSObject+SelectorCrash.m in Sources */,
 				A8DF91A31E8A803D0065076C /* NeverCrashManager.m in Sources */,
 				A81DA6F61E8A051F00B81195 /* main.m in Sources */,
+				364C7D361E8AA19300E8B92B /* BadAccessCrashViewController.m in Sources */,
 				A8DF91A21E8A803D0065076C /* NSObject+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
