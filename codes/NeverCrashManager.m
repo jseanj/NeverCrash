@@ -7,9 +7,4 @@
     [NSObject nc_enableKVOGuard];
     [NSObject nc_enableSelectorGuard];
 }
-
-+ (void)disEnable {
-    [NSObject nc_disEnableKVOGuard];
-    [NSObject nc_disEnableSelectorGuard];
-}
 @end

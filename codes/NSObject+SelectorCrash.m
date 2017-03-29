@@ -19,11 +19,8 @@ id addMethod(id self, SEL _cmd) {
 
 @implementation NSObject (SelectorCrash)
 + (void)nc_enableSelectorGuard {
-    [self nc_swizzSelector:@selector(nc_forwardingTargetForSelector:) originalSelector:@selector(forwardingTargetForSelector:)];
-}
-
-+ (void)nc_disEnableSelectorGuard {
-    [self nc_swizzSelector:@selector(forwardingTargetForSelector:) originalSelector:@selector(nc_forwardingTargetForSelector:)];
+    NSObject *object = [[NSObject alloc] init];
+    [object nc_instanceSwizzleSelector:@selector(nc_forwardingTargetForSelector:) originalSelector:@selector(forwardingTargetForSelector:)];
 }
 
 - (id)nc_forwardingTargetForSelector:(SEL)aSelector {

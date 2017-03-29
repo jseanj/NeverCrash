@@ -6,13 +6,9 @@ static int const NCKVOCrashKey;
 
 @implementation NSObject (KVOCrash)
 + (void)nc_enableKVOGuard {
-    [self nc_swizzSelector:@selector(nc_addObserver:forKeyPath:options:context:) originalSelector:@selector(addObserver:forKeyPath:options:context:)];
-    [self nc_swizzSelector:@selector(nc_removeObserver:forKeyPath:) originalSelector:@selector(removeObserver:forKeyPath:)];
-}
-
-+ (void)nc_disEnableKVOGuard {
-    [self nc_swizzSelector:@selector(addObserver:forKeyPath:options:context:) originalSelector:@selector(nc_addObserver:forKeyPath:options:context:)];
-    [self nc_swizzSelector:@selector(removeObserver:forKeyPath:) originalSelector:@selector(nc_removeObserver:forKeyPath:)];
+    NSObject *object = [[NSObject alloc] init];
+    [object nc_instanceSwizzleSelector:@selector(nc_addObserver:forKeyPath:options:context:) originalSelector:@selector(addObserver:forKeyPath:options:context:)];
+    [object nc_instanceSwizzleSelector:@selector(nc_removeObserver:forKeyPath:) originalSelector:@selector(removeObserver:forKeyPath:)];
 }
 
 - (NSMutableDictionary *)keyPathInfos {

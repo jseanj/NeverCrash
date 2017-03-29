@@ -2,5 +2,4 @@
 
 @interface NeverCrashManager : NSObject
 + (void)enable;
-+ (void)disEnable;
 @end
