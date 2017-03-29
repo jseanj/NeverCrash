@@ -1,26 +1,22 @@
 //
-//  SelectorCrashViewController.m
+//  NotificationCrashViewController.m
 //  NeverCrashDemo
 //
-//  Created by knewcloud on 2017/3/28.
+//  Created by knewcloud on 2017/3/29.
 //  Copyright © 2017年 jseanj. All rights reserved.
 //
 
-#import "SelectorCrashViewController.h"
+#import "NotificationCrashViewController.h"
 
-@interface SelectorCrashViewController ()
+@interface NotificationCrashViewController ()
 
 @end
 
-@implementation SelectorCrashViewController
+@implementation NotificationCrashViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    [self performSelector:NSSelectorFromString(@"test")];
-#pragma clang diagnostic pop
 }
 
 - (void)didReceiveMemoryWarning {

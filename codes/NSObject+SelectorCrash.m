@@ -28,7 +28,7 @@ id addMethod(id self, SEL _cmd) {
         IMP impOfNSObject = class_getMethodImplementation([NSObject class], @selector(forwardInvocation:));
         IMP imp = class_getMethodImplementation([self class], @selector(forwardInvocation:));
         if (imp != impOfNSObject) {
-            NSLog(@"class has implemented invocation");
+            //NSLog(@"class has implemented invocation");
             return nil;
         }
     }

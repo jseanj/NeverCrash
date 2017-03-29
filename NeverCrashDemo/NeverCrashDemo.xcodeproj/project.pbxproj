@@ -34,6 +34,9 @@
 		A8DF91BA1E8B532B0065076C /* NSSet+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91B91E8B532B0065076C /* NSSet+Crash.m */; };
 		A8DF91BD1E8B53420065076C /* NSMutableSet+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91BC1E8B53420065076C /* NSMutableSet+Crash.m */; };
 		A8DF91C01E8B59200065076C /* NSObject+BadAccessCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91BF1E8B59200065076C /* NSObject+BadAccessCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8DF92021E8B92BB0065076C /* NotificationCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF92011E8B92BB0065076C /* NotificationCrashViewController.m */; };
+		A8DF920B1E8B9F0C0065076C /* NSTimer+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF920A1E8B9F0B0065076C /* NSTimer+Crash.m */; };
+		A8DF920E1E8BA3E00065076C /* CALayer+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF920D1E8BA3E00065076C /* CALayer+Crash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,12 @@
 		A8DF91BC1E8B53420065076C /* NSMutableSet+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+Crash.m"; sourceTree = "<group>"; };
 		A8DF91BE1E8B59200065076C /* NSObject+BadAccessCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BadAccessCrash.h"; sourceTree = "<group>"; };
 		A8DF91BF1E8B59200065076C /* NSObject+BadAccessCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BadAccessCrash.m"; sourceTree = "<group>"; };
+		A8DF92001E8B92BB0065076C /* NotificationCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCrashViewController.h; sourceTree = "<group>"; };
+		A8DF92011E8B92BB0065076C /* NotificationCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCrashViewController.m; sourceTree = "<group>"; };
+		A8DF92091E8B9F0B0065076C /* NSTimer+Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Crash.h"; sourceTree = "<group>"; };
+		A8DF920A1E8B9F0B0065076C /* NSTimer+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Crash.m"; sourceTree = "<group>"; };
+		A8DF920C1E8BA3E00065076C /* CALayer+Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Crash.h"; sourceTree = "<group>"; };
+		A8DF920D1E8BA3E00065076C /* CALayer+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Crash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +178,8 @@
 				364C7D2C1E8AA14200E8B92B /* SelectorCrashViewController.m */,
 				364C7D2E1E8AA15800E8B92B /* TimerCrashViewController.h */,
 				364C7D2F1E8AA15800E8B92B /* TimerCrashViewController.m */,
+				A8DF92001E8B92BB0065076C /* NotificationCrashViewController.h */,
+				A8DF92011E8B92BB0065076C /* NotificationCrashViewController.m */,
 				364C7D311E8AA16F00E8B92B /* ContainerCrashViewController.h */,
 				364C7D321E8AA16F00E8B92B /* ContainerCrashViewController.m */,
 				364C7D341E8AA19300E8B92B /* BadAccessCrashViewController.h */,
@@ -224,6 +235,10 @@
 				364C7D3B1E8AA3D800E8B92B /* NSObject+SelectorCrash.m */,
 				A8DF91BE1E8B59200065076C /* NSObject+BadAccessCrash.h */,
 				A8DF91BF1E8B59200065076C /* NSObject+BadAccessCrash.m */,
+				A8DF92091E8B9F0B0065076C /* NSTimer+Crash.h */,
+				A8DF920A1E8B9F0B0065076C /* NSTimer+Crash.m */,
+				A8DF920C1E8BA3E00065076C /* CALayer+Crash.h */,
+				A8DF920D1E8BA3E00065076C /* CALayer+Crash.m */,
 			);
 			name = codes;
 			path = ../../codes;
@@ -385,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DF920B1E8B9F0C0065076C /* NSTimer+Crash.m in Sources */,
 				A8DF91B41E8B52FA0065076C /* NSDictionary+Crash.m in Sources */,
 				364C7D301E8AA15800E8B92B /* TimerCrashViewController.m in Sources */,
 				A8DF91A81E8B4C060065076C /* NSString+Crash.m in Sources */,
@@ -403,10 +419,12 @@
 				A81DA6F61E8A051F00B81195 /* main.m in Sources */,
 				364C7D361E8AA19300E8B92B /* BadAccessCrashViewController.m in Sources */,
 				A8DF91BD1E8B53420065076C /* NSMutableSet+Crash.m in Sources */,
+				A8DF920E1E8BA3E00065076C /* CALayer+Crash.m in Sources */,
 				A8DF91BA1E8B532B0065076C /* NSSet+Crash.m in Sources */,
 				A8DF91B71E8B530D0065076C /* NSMutableDictionary+Crash.m in Sources */,
 				A8DF91A21E8A803D0065076C /* NSObject+Swizzling.m in Sources */,
 				A8DF91C01E8B59200065076C /* NSObject+BadAccessCrash.m in Sources */,
+				A8DF92021E8B92BB0065076C /* NotificationCrashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

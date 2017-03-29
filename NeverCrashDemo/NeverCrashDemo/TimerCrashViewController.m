@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSTimer *timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timerInvoke) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)timerInvoke {
+    NSLog(@"%s", __func__);
+}
+
+- (void)dealloc {
+    NSLog(@"%s", __func__);
 }
 
 - (void)didReceiveMemoryWarning {

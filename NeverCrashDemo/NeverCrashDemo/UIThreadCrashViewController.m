@@ -9,7 +9,7 @@
 #import "UIThreadCrashViewController.h"
 
 @interface UIThreadCrashViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
 @implementation UIThreadCrashViewController
@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        //self.label.text = @"test";
+    });
+}
+
+- (IBAction)btnTapped:(id)sender {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        self.label.text = @"test";
+    });
 }
 
 - (void)didReceiveMemoryWarning {
