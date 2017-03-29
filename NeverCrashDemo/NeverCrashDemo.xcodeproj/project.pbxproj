@@ -33,6 +33,7 @@
 		A8DF91B71E8B530D0065076C /* NSMutableDictionary+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91B61E8B530D0065076C /* NSMutableDictionary+Crash.m */; };
 		A8DF91BA1E8B532B0065076C /* NSSet+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91B91E8B532B0065076C /* NSSet+Crash.m */; };
 		A8DF91BD1E8B53420065076C /* NSMutableSet+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91BC1E8B53420065076C /* NSMutableSet+Crash.m */; };
+		A8DF91C01E8B59200065076C /* NSObject+BadAccessCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF91BF1E8B59200065076C /* NSObject+BadAccessCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		A8DF91B91E8B532B0065076C /* NSSet+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Crash.m"; sourceTree = "<group>"; };
 		A8DF91BB1E8B53420065076C /* NSMutableSet+Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+Crash.h"; sourceTree = "<group>"; };
 		A8DF91BC1E8B53420065076C /* NSMutableSet+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+Crash.m"; sourceTree = "<group>"; };
+		A8DF91BE1E8B59200065076C /* NSObject+BadAccessCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BadAccessCrash.h"; sourceTree = "<group>"; };
+		A8DF91BF1E8B59200065076C /* NSObject+BadAccessCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BadAccessCrash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 				A8DF91A11E8A803D0065076C /* NSObject+KVOCrash.m */,
 				364C7D3A1E8AA3D800E8B92B /* NSObject+SelectorCrash.h */,
 				364C7D3B1E8AA3D800E8B92B /* NSObject+SelectorCrash.m */,
+				A8DF91BE1E8B59200065076C /* NSObject+BadAccessCrash.h */,
+				A8DF91BF1E8B59200065076C /* NSObject+BadAccessCrash.m */,
 			);
 			name = codes;
 			path = ../../codes;
@@ -401,6 +406,7 @@
 				A8DF91BA1E8B532B0065076C /* NSSet+Crash.m in Sources */,
 				A8DF91B71E8B530D0065076C /* NSMutableDictionary+Crash.m in Sources */,
 				A8DF91A21E8A803D0065076C /* NSObject+Swizzling.m in Sources */,
+				A8DF91C01E8B59200065076C /* NSObject+BadAccessCrash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
